@@ -6,41 +6,29 @@ class Computadora{
         this.mother = mother;
     }
 }
-
-//CPU
-const nombrecpu1 = 'Intel Core i7';
-const nombrecpu2 = 'Ryzen 7';
-//GPU
-const nombregpu1 = 'Nvidia GTX 1080';
-const nombregpu2 = 'Radeon RX570';
-//RAM
-const nombreram1 = '16GB';
-const nombreram2 = '8GB';
-//MOTHER
-const nombremother1 = 'Aorus x470';
-const nombremother2 = 'Asus B550';
+  
+    const cpu1 = ['Intel Core i7', 'Ryzen 7']
+    const gpu1 = ['Nvidia GTX 1080', 'Radeon RX570'];
+    const ram1 = ['16GB', '8GB'];
+    const mother1 = ['Aorus x470', 'Asus B550'];
 
 function compu(){
+
+        let cpu = prompt('Ingrese el nombre del CPU:', cpu1.join(" o "));
         
-        let cpu = prompt('Ingrese el nombre del CPU: \n'+ '1.'+ nombrecpu1 + '\n' +'2.'+ nombrecpu2);
+        let gpu = prompt('Ingrese el nombre de la GPU: ', gpu1.join(" o "));     
         
-        let gpu = prompt('Ingrese el nombre de la GPU: \n'+ '1.'+ nombregpu1 + '\n' +'2.'+ nombregpu2);     
+        let ram = prompt('Ingrese el nombre de la RAM: ', ram1.join(" o "));  
         
-        let ram = prompt('Ingrese el nombre de la RAM: \n'+ '1.'+ nombreram1 + '\n' +'2.'+ nombreram2);  
-        
-        let mother = prompt('Ingrese el nombre del MOTHER: \n'+ '1.'+ nombremother1 + '\n' +'2.'+ nombremother2);
+        let mother = prompt('Ingrese el nombre del MOTHER: ', mother1.join(" o "));
 
     console.log(cpu, gpu, ram, mother);
 
         if (cpu != '' && gpu != '' && ram != '' && mother != '') {
+            alert(' cpu:  '+ cpu +'\n gpu:  '+ gpu +'\n ram:  '+ ram +'\n mother:  '+ mother);
     } else {
         alert('Debe ingresar los componentes');
     } 
-
-        if (cpu == '' && gpu == '' && ram == '' && mother == ''){
-    }else {
-        alert(' cpu:  '+ cpu +'\n gpu:  '+ gpu +'\n ram:  '+ ram +'\n mother:  '+ mother); 
-    }
 }
 
 compu()
