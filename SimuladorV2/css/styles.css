@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+div, form {
+    font-family: 'Lato', sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+body {
+    background-color: rgb(124, 124, 124);
+}
+
+form {
+    padding: 2em;
+}
+
+.color-formulario {
+    background-color: whitesmoke;
+}
+
+h1, p {
+    font-size: 4em;
+    background-color: rgb(155, 92, 92);
+    
+}
+h2, h3, h4, h5 {
+    font-size: 1.64rem;
+}
+h6 { 
+    font-size: 2rem;
+    font-weight: bold;
+}
+p, li {
+    font-size: 1.6em;
+    text-align: center;
+}
+p1 {
+    font-size: 1.6em;
+    font-weight: bold;
+}
+.collection-item {
+    line-height: 2em !important;
+}
+
+.color-carrito {
+    background-color: rgb(124, 124, 124);
+}
+
+.carrito {
+    border-color: rgb(255, 0, 0);
+    padding: 5px;
+}
+
+.italica-carrito {
+    font-style: italic;
+}
+
+.fondo-inputs {
+    background-color: rgb(184, 76, 76) !important;
+}
+
+h8 {
+    font-size: 2.64rem;
+    font-weight: bold;
+}
